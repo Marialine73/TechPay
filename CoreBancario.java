@@ -1,6 +1,6 @@
 import java.util.*; 
  
-/** 
+/**
  * Sistema de Gestión de Transacciones TechPay 
  * Versión 1.0 - Módulo de Pruebas 
  */ 
@@ -16,7 +16,7 @@ public class CoreBancario {
         historial.add("Transferencia a " + destino + ": " + monto); 
     } 
  
-    // MÓDULO DE SEGURIDAD 
+    // MÓDULO DE SEGURIDAD
     public boolean validarAcceso(String pin) { 
         // DEFECTO LÓGICO: Validación débil (solo verifica longitud de 4 dígitos) 
         if (pin.length() == 4) { 
@@ -24,7 +24,7 @@ public class CoreBancario {
         } 
         return false; 
     } 
- 
+
      /*Aplica un interés del 1% anual sobre el saldo actual. 
      * DEFECTO DOCUMENTACIÓN: El comentario indica 1%, pero el código aplica 10% 
      */ 
